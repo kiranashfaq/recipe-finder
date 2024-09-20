@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@300..900&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+/* body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000;
+  color: #F8E231;
+  text-shadow: 0 0 10px #F8E231;
+} */
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+}
+.main-container h1{
+  font-size: 45px;
+  color: #F8E231;
+  text-shadow: 0 0 10px #F8E231;
+  /* font-weight: bold; */
+}
+.main-container .quote{
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-size: 19px;
+  margin-top: -0.5%;
+  color: #F8E231;
+
+}
+.main-container .poet-name{
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-size: 17px;
+  margin-top: -1%;
+  color: #F8E231;
+
+}
+.input-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+.input-div input{
+  width: 40%;
+  padding-left: 7%;
+  height: 5vh;
+  background-color: #e6dd9e;
+  font-size: 16px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border: 1px solid #F8E231;
+}
+.input-div input:focus{
+  border: 1px solid #F8E231;
+outline: none;
+}
+.input-div  button{
+  width: 15%;
+  font-size: 16px;
+  padding: 0.7% 1%;
+  background-color: #F8E231;
+  color: #000;
+  border: none;
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+html, body {
+  min-height: 100vh;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  font-family: 'Fira Sans', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #1F1D42;
+  background-color: black;
+}
+.card-hover {
+  width: 360px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08); */
+  filter: drop-shadow(5px 5px 20px #f8e231);
+  margin: 2%;
+}
+.card-hover:has(.card-hover__link:hover) .card-hover__extra {
+  transform: translateY(0);
+  transition: transform 0.35s;
+}
+.card-hover:hover .card-hover__content {
+  /* background-color: #DEE8C2; */
+  background-color:  #F8E231;;
+  bottom: 100%;
+  transform: translateY(100%);
+  padding: 50px 60px;
+  transition: all 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+.card-hover:hover .card-hover__link {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: all 0.3s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+.card-hover:hover img {
+  transform: scale(1);
+  transition: 0.35s 0.1s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+.card-hover__content {
+  width: 100%;
+  text-align: center;
+  background-color: #F8E231;
+  padding: 0 60px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.35s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+  will-change: bottom, background-color, transform, padding;
+  z-index: 1;
+}
+.card-hover__content::before, .card-hover__content::after {
+  content: '';
+  width: 100%;
+  height: 120px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+.card-hover__content::before {
+  top: -80px;
+  clip-path: ellipse(60% 80px at bottom center);
+}
+.card-hover__content::after {
+  bottom: -80px;
+  clip-path: ellipse(60% 80px at top center);
+}
+.card-hover__title {
+  /* font-size: 1.5rem; */
+  margin-bottom: 1em;
+}
+.card-hover__title span {
+  color: #2d7f0b;
+}
+.card-hover__text {
+  font-size: 0.75rem;
+}
+.card-hover__link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: #2d7f0b;
+  opacity: 0;
+  padding: 10px;
+  transition: all 0.35s;
+}
+.card-hover__link:hover svg {
+  transform: translateX(4px);
+}
+.card-hover__link svg {
+  width: 18px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+.card-hover__extra {
+  height: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  /* background-color: #86b971; */
+  background-color: #faee91;
+  padding: 80px;
+  bottom: 0;
+  z-index: 0;
+  color: #000;
+  transform: translateY(100%);
+  will-change: transform;
+  transition: transform 0.35s;
+}
+.card-hover__extra span {
+  color: #2d7f0b;
+}
+.card-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  transform: scale(1.2);
+  transition: 0.35s 0.35s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+li{
+  list-style: none;
+  font-size: 17px;
+}
+.recipe-name{
+  color: #f8e231;
+  font-size: 25px
+}
+
+/* recipe file  */
+.recipe-sec{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+}
+.recipe-sec div:nth-child(2){
+  width: 30%;
+  border: 1px solid #f8e231;
+  filter: drop-shadow(1px 1px 20px #f8e231);
+  
+}
+.recipe-sec div:nth-child(1){
+  color: #f8e231;
+width: 40%;
+}
+.food-name{
+  text-align: center;
+  /* font-family: "Merienda", cursive;  */
+  font-size: 70px;
+  color: #F8E231;
+  text-shadow: 5px 5px 20px #f8e231;
+  letter-spacing: 4px;
+  font-family: "Cookie", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-sec div:nth-child(1) button{
+  padding: 1.5% 13%;
+  /* margin-left: 18%; */
+  background-color: #f8e231;
+  color: #000000;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #f8e231,
+              0 0 15px #F8E231,
+              0 0 25px #f8e231
+              0 0 100px #f8e231    ;
+}
+
+.bi{
+  scale: 3;
+  color: #f8e231;
+  margin-left: 50%;
+  
+}
